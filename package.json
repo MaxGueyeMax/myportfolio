@@ -6,6 +6,8 @@
     "@hotwired/turbo-rails": "^7.2.0",
     "@popperjs/core": "^2.11.6",
     "bootstrap": "^5.2.1",
+    "jquery": "^3.6.1",
+    "jquery-appear-original": "^0.6.2",
     "webpack": "^5.74.0",
     "webpack-cli": "^4.10.0"
   },

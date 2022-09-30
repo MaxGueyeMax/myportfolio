@@ -12,30 +12,42 @@
 }
 
 .title2 {
+  color: white;
   font-size: 26px;
   font-family: 'Roboto', sans-serif;
-  color: white;
 }
 
 .title3 {
+  color: rgba(27,140,254,1);
   font-size: 30px;
   font-family: 'Montserra', sans-serif;
-  color: rgba(27,140,254,1);
   font-weight: 700;
 }
 
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+ul {
+  padding: 0;
+}
+
 p {
+  color: white;
   font-size: 16px;
   font-family: 'Montserra', sans-serif;
-  color: white;
   letter-spacing: -1px;
   font-weight: 200;
 }
 
 strong {
+  color: #1A489E;
   font-size: 16px;
   font-family: 'Montserra', sans-serif;
-  color: #1A489E;
   letter-spacing: -1px;
   font-weight: 400;
 }

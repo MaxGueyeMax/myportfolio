@@ -1,5 +1,12 @@
-html body {
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
   background: $background-color;
   height:400vh;
   width: 100%;
+  margin: 0;
+  padding: 0;
 }
