@@ -1,0 +1,98 @@
+.sec {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+}
+
+.sec:nth-child(odd){
+  background: $hover-color;
+}
+
+.navbar {
+  position: fixed;
+  top: 50%;
+  right: 30px;
+  transform: translateY(-50%);
+  z-index: 1000;
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    li {
+      position: relative;
+
+      .dot {
+        color: $secondary-color;
+
+        span {
+          display: inline-block;
+          background: $primary-color;
+          letter-spacing: -1px;
+          font-size: 12px;
+          padding: 8px 16px;
+          margin-right: 20px;
+          border-radius: 8px;
+          transform: translateX(30px);
+          opacity: 0px;
+          transform: translateX(30px);
+          opacity: 0;
+
+          &:before {
+            content: '';
+            position: absolute;
+            top: 175%;
+            right:0;
+            transform: translate(8px, -50px);
+            border-left: 8px solid $primary-color;
+            border-top: 8px solid transparent;
+            border-bottom: 8px solid transparent;
+            display: block;
+          }
+        }
+      }
+    }
+  }
+}
+
+.navbar ul li .dot::before, .navbar ul li .dot::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  border-radius: 50%;
+  display: block;
+  transition: .2s ease-out;
+}
+
+
+.navbar ul li .dot::before {
+  height: 5px;
+  width: 5px;
+  border: 2px solid green;
+  right: 0;
+  transform: translateY(-50%)
+}
+
+.navbar ul li .dot.active::before, .navbar ul li:hover .dot::before {
+  border-color: $primary-color;
+  background: $secondary-color
+}
+
+.navbar ul li .dot::after {
+  height: 15px;
+  width: 15px;
+  border: 2px solid green;
+  right: -5px;
+  transform: translateY(-50%) scale(0);
+}
+
+.navbar ul li .dot.active::after, .navbar ul li:hover .dot::after {
+  transform: translateY(-50%) scale(1);
+}
+
+
+.navbar ul li:hover .dot span {
+  transform: translateX(0px);
+  opacity: 1;
+}
