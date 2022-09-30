@@ -5,7 +5,7 @@
 }
 
 .sec:nth-child(odd){
-  background: $hover-color;
+  background: $primary-color;
 }
 
 .navbar {
@@ -28,7 +28,7 @@
 
         span {
           display: inline-block;
-          background: $primary-color;
+          // background: $primary-color;
           letter-spacing: -1px;
           font-size: 12px;
           padding: 8px 16px;
@@ -43,11 +43,11 @@
             content: '';
             position: absolute;
             top: 175%;
-            right:0;
-            transform: translate(8px, -50px);
-            border-left: 8px solid $primary-color;
-            border-top: 8px solid transparent;
-            border-bottom: 8px solid transparent;
+            right:8px;
+            transform: translate(8px, -46px);
+            border-left: 4px solid $secondary-color;
+            border-top: 4px solid transparent;
+            border-bottom: 4px solid transparent;
             display: block;
           }
         }
@@ -69,20 +69,20 @@
 .navbar ul li .dot::before {
   height: 5px;
   width: 5px;
-  border: 2px solid green;
+  border: 2px solid $secondary-color;
   right: 0;
   transform: translateY(-50%)
 }
 
 .navbar ul li .dot.active::before, .navbar ul li:hover .dot::before {
-  border-color: $primary-color;
+  border-color: $secondary-color;
   background: $secondary-color
 }
 
 .navbar ul li .dot::after {
   height: 15px;
   width: 15px;
-  border: 2px solid green;
+  border: 2px solid $secondary-color;
   right: -5px;
   transform: translateY(-50%) scale(0);
 }
