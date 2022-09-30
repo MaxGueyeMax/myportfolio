@@ -1,0 +1,14 @@
+.fixed-top {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: $zindex-fixed;
+}
+
+.scroll-progress {
+  width: 0%;
+  height: 5px;
+  display: block;
+  background-color: rgba(27,140,254,1)
+}

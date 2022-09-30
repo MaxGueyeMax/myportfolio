@@ -1,0 +1,13 @@
+const scrollProgressElement = document.querySelector("#scroll-progress");
+
+function scrollProgress() {
+  const totalHeightOfWebPage = document.body.scrollHeight;
+  const currentDistanceFRomTop = document.documentElement.scrollTop;
+  const windowHeight = document.documentElement.clientHeight;
+
+  const scrolledPercentage = (currentDistanceFRomTop / (totalHeightOfWebPage - windowHeight)) * 100;
+
+  scrollProgressElement.style.width = Math.round(scrolledPercentage) + "%"
+}
+
+document.addEventListener('scroll', scrollProgress);
