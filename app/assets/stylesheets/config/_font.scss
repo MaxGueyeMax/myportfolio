@@ -1,0 +1,62 @@
+// Import Google fonts
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500&family=Playfair+Display&family=Roboto&display=swap');
+
+.title1 {
+  font-size: 124px;
+  font-family: 'Montserra', sans-serif;
+  letter-spacing: -3px;
+  font-weight: 700;
+  background: -webkit-linear-gradient(-106deg, rgba(4,68,133,1) 8%, rgba(16,99,183,1) 33%, rgba(23,117,212,1) 41%, rgba(27,128,231,1) 49%, rgba(46,147,250,1) 56%, rgba(79,169,250,1) 65%, rgba(159,218,255,1) 92%, rgba(159,218,255,1) 98%, rgba(134,254,243,1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.title2 {
+  font-size: 26px;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+}
+
+.title3 {
+  font-size: 30px;
+  font-family: 'Montserra', sans-serif;
+  color: rgba(27,140,254,1);
+  font-weight: 700;
+}
+
+p {
+  font-size: 16px;
+  font-family: 'Montserra', sans-serif;
+  color: white;
+  letter-spacing: -1px;
+  font-weight: 200;
+}
+
+strong {
+  font-size: 16px;
+  font-family: 'Montserra', sans-serif;
+  color: #1A489E;
+  letter-spacing: -1px;
+  font-weight: 400;
+}
+
+p a {
+    text-decoration: underline;
+    font-size: 16px;
+    font-family: 'Montserra', sans-serif;
+    letter-spacing: -1px;
+    font-weight: 400;
+    background: -webkit-linear-gradient(216deg, rgba(27,140,254,1) 0%, rgba(46,147,250,1) 6%, rgba(89,168,247,1) 22%, rgba(135,206,250,1) 54%, rgba(159,218,255,1) 67%, rgba(159,218,255,1) 94%, rgba(134,254,243,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#typed {
+  font-size: 16px;
+  font-family: 'Montserra', sans-serif;
+  letter-spacing: -1px;
+  font-weight: 400;
+  background: -webkit-linear-gradient(216deg, rgba(27,140,254,1) 0%, rgba(46,147,250,1) 6%, rgba(89,168,247,1) 22%, rgba(135,206,250,1) 54%, rgba(159,218,255,1) 67%, rgba(159,218,255,1) 94%, rgba(134,254,243,1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
