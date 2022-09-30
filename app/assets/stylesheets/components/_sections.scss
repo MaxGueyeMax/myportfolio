@@ -1,3 +1,17 @@
 #overview {
   height: 100vh;
+  width: 100%;
+
+  .section-one {
+    display: flex;
+
+    .leftbox {
+      width: 50%;
+    }
+
+    .rightbox {
+      width: 50%;
+      background: blue;
+      }
+  }
 }
