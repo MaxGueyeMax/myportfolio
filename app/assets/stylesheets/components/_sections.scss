@@ -12,6 +12,28 @@
     .rightbox {
       width: 50%;
       background: blue;
+    }
+  }
+}
+
+/*Pour tous les appareils équipés d'écrans et dont la taille est inférieure à 780px*/
+@media screen and (max-width: 780px){
+  #overview {
+    height: 100vh;
+    width: 100%;
+
+    .section-one {
+      display: flex;
+      flex-direction: column;
+
+      .leftbox {
+        width: 100%;
       }
+
+      .rightbox {
+        width: 100%;
+        background: blue;
+      }
+    }
   }
 }
