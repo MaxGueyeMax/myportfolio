@@ -17,6 +17,11 @@ Rails.application.configure do
   # Enable server timing
   config.server_timing = true
 
+  # Config for mMailcatcher
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.smtp_settings = { :address => '127.0.0.1', :port => 1025 }
+  config.action_mailer.raise_delivery_errors = false
+
   # Config ngrok
   config.hosts << /[a-z0-9\-]+\.eu\.ngrok\.io/
 
