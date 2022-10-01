@@ -1,6 +1,6 @@
 <div class="scroll-progress fixed-top" id="scroll-progress"></div>
 
-<nav class="navbar">
+<nav class="navbar-scroll">
   <ul>
     <li>
       <a href="#overview" class="dot active" data-scroll="overview">
@@ -63,8 +63,10 @@
 <section class="sec" id="background">
   <div class="container section-two">
     <div class="leftbox">
+      <%= render 'background_dates' %>
     </div>
     <div class="rightbox">
+      <%= render 'background_exp' %>
     </div>
   </div>
 </section>

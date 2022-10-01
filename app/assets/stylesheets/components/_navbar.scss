@@ -8,7 +8,7 @@
   background: $background2-color;
 }
 
-.navbar {
+.navbar-scroll {
   position: fixed;
   top: 50%;
   right: 30px;
@@ -56,7 +56,7 @@
   }
 }
 
-.navbar ul li .dot::before, .navbar ul li .dot::after {
+.navbar-scroll ul li .dot::before, .navbar-scroll ul li .dot::after {
   content: '';
   position: absolute;
   top: 50%;
@@ -66,7 +66,7 @@
 }
 
 
-.navbar ul li .dot::before {
+.navbar-scroll ul li .dot::before {
   height: 5px;
   width: 5px;
   border: 2px solid $secondary-color;
@@ -74,12 +74,12 @@
   transform: translateY(-50%)
 }
 
-.navbar ul li .dot.active::before, .navbar ul li:hover .dot::before {
+.navbar-scroll ul li .dot.active::before, .navbar-scroll ul li:hover .dot::before {
   border-color: $secondary-color;
   background: $secondary-color
 }
 
-.navbar ul li .dot::after {
+.navbar-scroll ul li .dot::after {
   height: 15px;
   width: 15px;
   border: 2px solid $secondary-color;
@@ -87,12 +87,12 @@
   transform: translateY(-50%) scale(0);
 }
 
-.navbar ul li .dot.active::after, .navbar ul li:hover .dot::after {
+.navbar-scroll ul li .dot.active::after, .navbar-scroll ul li:hover .dot::after {
   transform: translateY(-50%) scale(1);
 }
 
 
-.navbar ul li:hover .dot span {
+.navbar-scroll ul li:hover .dot span {
   transform: translateX(0px);
   opacity: 1;
 }
