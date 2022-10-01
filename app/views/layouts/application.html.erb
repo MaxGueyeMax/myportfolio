@@ -28,7 +28,7 @@
           $('.sec').each(function(){
             var id = $(this).attr('id');
             var height = $(this).height();
-            var offset = $(this).offset().top - 150;
+            var offset = $(this).offset().top - 250;
             if(top >= offset && top < offset + height){
               link.removeClass('active');
               $('.navbar').find('[data-scroll="' + id + '"]').addClass('active');

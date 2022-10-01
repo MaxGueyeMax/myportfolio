@@ -5,4 +5,4 @@ import "./controllers"
 require("jquery")
 require("./custom/progressbar")
 require("./custom/type")
-
+require("@fortawesome/fontawesome-free/js/all")

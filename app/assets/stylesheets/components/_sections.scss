@@ -1,6 +1,10 @@
+/* Section 1 */
+
 #overview {
   height: 100vh;
   width: 100%;
+  display: flex;
+  align-items: center;
 
   .section-one {
     display: flex;
@@ -21,6 +25,8 @@
   #overview {
     height: 100vh;
     width: 100%;
+    display: flex;
+    align-items: center;
 
     .section-one {
       display: flex;
@@ -31,13 +37,153 @@
         width: 100%;
 
         .title1 {
-          font-size: 100px;
+          font-size: 90px;
         }
       }
 
       .rightbox {
         width: 100%;
         background: blue;
+      }
+    }
+  }
+}
+
+
+/* Section 2 */
+
+#background {
+  height: auto;
+  width: 100%;
+
+  .section-two {
+    display: flex;
+
+    .leftbox {
+      background: yellow;
+      height: 60vh;
+      flex-grow: 1;
+    }
+
+    .rightbox {
+      background: green;
+      height: 60vh;
+      flex-grow: 3;
+    }
+  }
+}
+
+/*Pour tous les appareils équipés d'écrans et dont la taille est inférieure à 780px*/
+@media screen and (max-width: 780px){
+  #background {
+    height: auto;
+    width: 100%;
+
+    .section-two {
+      display: flex;
+
+      .leftbox {
+        background: yellow;
+        height: 60vh;
+        flex-grow: 3;
+      }
+
+      .rightbox {
+        background: green;
+        height: 60vh;
+        flex-grow: 7;
+      }
+    }
+  }
+}
+
+
+/* Section 3 */
+
+#projects {
+  height: auto;
+  width: 100%;
+
+  .section-three {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+    .experience {
+      background: purple;
+      width: 35%;
+      height: 60vh;
+      margin: 20px 0px 20px 0px;
+    }
+  }
+}
+
+/*Pour tous les appareils équipés d'écrans et dont la taille est inférieure à 780px*/
+@media screen and (max-width: 780px){
+  #projects {
+    height: auto;
+    width: 100%;
+
+    .section-three {
+      display: flex;
+
+      .experience {
+        background: purple;
+        width: 80%;
+        height: 60vh;
+        margin: 20px 0px 20px 0px;
+      }
+    }
+  }
+}
+
+/* Section 4 */
+
+#contact {
+  height: auto;
+  width: 100%;
+
+  .section-four {
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    .leftbox {
+      background: orange;
+      height: auto;
+      flex-grow: 1;
+    }
+
+    .rightbox {
+      background: pink;
+      height: 70vh;
+      flex-grow: 3;
+    }
+  }
+}
+
+/*Pour tous les appareils équipés d'écrans et dont la taille est inférieure à 780px*/
+@media screen and (max-width: 780px){
+  #contact {
+    height: auto;
+    width: 100%;
+
+    .section-four {
+      display: flex;
+      flex-direction: column;
+      padding-top: 20px;
+      padding-bottom: 20px;
+
+      .leftbox {
+        background: orange;
+        flex-grow: 1;
+        height: auto;
+      }
+
+      .rightbox {
+        background: pink;
+        flex-grow: 1;
+        height: 70vh;
       }
     }
   }
