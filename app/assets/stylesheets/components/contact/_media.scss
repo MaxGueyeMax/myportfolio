@@ -1,0 +1,36 @@
+.media {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  flex-grow: 1;
+  align-content: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+
+  a {
+    font-size: 30px;
+    color: $primary-color;
+
+    &:hover {
+      color: $secondary-color;
+    }
+  }
+}
+
+@media screen and (max-width: 780px){
+  .media {
+    display: flex;
+    height: auto;
+    flex-grow: 1;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+
+    a {
+      font-size: 30px;
+      color: $primary-color
+    }
+  }
+}
