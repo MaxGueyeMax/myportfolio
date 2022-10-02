@@ -1,7 +1,7 @@
-.rightbox {
-  .title3 {
-    margin: 0 70px 36px 70px;
-  }
+.title-form {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
 }
 
 .contact-form {
@@ -41,12 +41,46 @@
 
     .btn {
       width: 20%;
+      background: $background2-color;
+      color: $primary-color;
+      border-radius: 16px;
+      border: none;
+
+      &:hover {
+        transform: scale(1.04);
+        background: $secondary-color;
+      }
     }
   }
 }
 
 .name .para, .email .para, .message .para {
   margin-bottom: -20px;
+  font-size: 18px;
+  font-family: 'Montserra', sans-serif;
+  letter-spacing: -1px;
+  font-weight: 400;
+  background: -webkit-linear-gradient(216deg,rgba(159,218,255,1) 17%, rgba(135,206,250,1) 54%, rgba(89,168,247,1) 76%, rgba(46,147,250,1) 87%,);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.name input, .email input, .message .text-form {
+  padding: 6px;
+  color: white;
+  font-size: 16px;
+  border-radius: 8px;
+  border: none;
+  background: #0C0F21;
+  box-shadow: 12px 13px 64px 2px rgba(28,140,254,0.64);
+  -webkit-box-shadow: 12px 13px 64px 2px rgba(28,140,254,0.64);
+  -moz-box-shadow: 12px 13px 64px 2px rgba(28,140,254,0.64);
+}
+
+.text-form::placeholder {
+  color: $primary-color;
+  font-size: 16px;
+  opacity: 30%;
 }
 
 @media screen and (max-width: 780px){
@@ -57,18 +91,13 @@
     }
 
     .rightbox {
-      margin-top: 70px;
-
-      .title3 {
-        margin: 0 70px 36px 70px;
-      }
+      margin-top: 24px;
     }
   }
 
   .contact-form {
-
     margin: 0;
-    
+
     .details {
       display: flex;
       gap: 0px;
@@ -101,12 +130,32 @@
       justify-content: center;
 
       .btn {
+        flex-grow: 1;
         width: 20%;
+        background: $background2-color;
+        color: $primary-color;
+        border-radius: 16px;
+        border: 1px solid $primary-color;
+
+        &:hover {
+          transform: scale(1.04);
+          background: $secondary-color;
+        }
       }
     }
   }
 
-  .name .para, .email .para, .message .para {
-    margin-bottom: -20px;
-  }
+    .name .para, .email .para, .message .para {
+      margin-bottom: -20px;
+    }
+
+    .name input, .email input, .message .text-form {
+      padding: 6px;
+      color: white;
+      font-size: 16px;
+      border-radius: 8px;
+      border: 1px solid $primary-color;
+      background: #0C0F21;
+    }
+
   }

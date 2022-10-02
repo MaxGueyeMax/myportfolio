@@ -9,7 +9,11 @@
 
   a {
     font-size: 30px;
-    color: $primary-color
+    color: $primary-color;
+
+    &:hover {
+      color: $secondary-color;
+    }
   }
 }
 
