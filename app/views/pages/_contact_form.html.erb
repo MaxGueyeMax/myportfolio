@@ -1,31 +1,41 @@
+
 <div class="container">
-
-  <div class="container">
-    <br>
-    <% flash.each do |key, message| %>
-      <p class="alert alert-<%= key %>"><%= message %></p>
-    <% end %>
-  </div>
-
-  <h1>Contact Form</h1>
-  <%= form_for Contact.new do |f| %>
-    <div class="col-md-6">
-      <%= f.label :name %><br>
-      <%= f.text_field  :name, required: true, class: "contact-form-text-area" %><br>
-
-      <%= f.label :email %><br>
-      <%= f.text_field :email, required: true, class: "contact-form-text-area" %><br>
-
-      <%= f.label :message %><br>
-      <%= f.text_area :message, rows: 8, cols: 40, required: true, class: "contact-form-text-area",
-            placeholder: "Send me a message"%><br>
-
-      <div class= "d-none">
-        <%= f.label :nickname %>
-        <%= f.text_field :nickname, :hint => 'Leave this field blank!' %>
-      </div>
-
-      <%= f.submit 'Send Message', class: 'btn btn-primary' %>
-    </div>
+  <br>
+  <% flash.each do |key, message| %>
+    <p class="alert alert-<%= key %>"><%= message %></p>
   <% end %>
 </div>
+
+<h1 class="title3">Contact Form</h1>
+<%= form_for Contact.new do |f| %>
+  <div class="contact-form">
+
+    <div class="details">
+      <div class="name">
+        <%= f.label :name, class: 'para' %><br>
+        <%= f.text_field  :name, required: true, class: "contact-form-text-area" %><br>
+      </div>
+
+      <div class="email">
+        <%= f.label :email, class: 'para' %><br>
+        <%= f.text_field :email, required: true, class: "contact-form-text-area" %><br>
+      </div>
+    </div>
+
+    <div class="message">
+      <%= f.label :message, class: 'para' %><br>
+      <%= f.text_area :message, rows: 8, cols: 40, required: true, class: "contact-form-text-area text-form",
+            placeholder: "Send me a message"%><br>
+    </div>
+
+    <div class= "d-none">
+      <%= f.label :nickname %>
+      <%= f.text_field :nickname, :hint => 'Leave this field blank!' %>
+    </div>
+
+    <div class="submit">
+      <%= f.submit 'Send Message', class: 'btn btn-primary' %>
+    </div>
+  </div>
+<% end %>
+

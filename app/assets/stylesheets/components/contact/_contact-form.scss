@@ -1,0 +1,112 @@
+.rightbox {
+  .title3 {
+    margin: 0 70px 36px 70px;
+  }
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  margin: 0 70px 0 70px;
+
+  .details {
+    display: flex;
+    gap: 24px;
+
+    .name {
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .email {
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  .message {
+    display: flex;
+    flex-direction: column;
+
+    .text-form {
+      width: auto;
+    }
+  }
+
+  .submit {
+    display: flex;
+    justify-content: center;
+
+    .btn {
+      width: 20%;
+    }
+  }
+}
+
+.name .para, .email .para, .message .para {
+  margin-bottom: -20px;
+}
+
+@media screen and (max-width: 780px){
+  .section-four {
+    .leftbox {
+      margin-top: 24px;
+      margin-bottom: 24px;
+    }
+
+    .rightbox {
+      margin-top: 70px;
+
+      .title3 {
+        margin: 0 70px 36px 70px;
+      }
+    }
+  }
+
+  .contact-form {
+
+    margin: 0;
+    
+    .details {
+      display: flex;
+      gap: 0px;
+      flex-direction: column;
+
+      .name {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .email {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+      }
+    }
+
+    .message {
+      display: flex;
+      flex-direction: column;
+
+      .text-form {
+        width: auto;
+      }
+    }
+
+    .submit {
+      display: flex;
+      justify-content: center;
+
+      .btn {
+        width: 20%;
+      }
+    }
+  }
+
+  .name .para, .email .para, .message .para {
+    margin-bottom: -20px;
+  }
+  }
