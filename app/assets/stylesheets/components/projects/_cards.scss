@@ -1,0 +1,135 @@
+// Process 2: Projects
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.process {
+  $bem-block: &;
+
+  width: 100%;
+  padding: 0 15px;
+  text-align: center;
+
+  &-item {
+    user-select: none;
+    text-align: center;
+    position: relative;
+    padding: 15px 35px;
+    transition: 0.4s ease-in-out;
+
+    &:hover {
+      background: darken($secondary-color, 5%);
+      border-radius: 16px;
+    }
+
+    &:hover #{$bem-block}-big-title {
+      transform: translateY(5px);
+      color: #1C8CFE;
+    }
+  }
+
+  &-big-title {
+    font-size: 36px;
+    -webkit-text-stroke: 1px #1C8CFE;
+    display: block;
+    color: transparent;
+    font-family: "Roboto";
+    font-weight: 700;
+    transition: 0.4s ease-in-out;
+  }
+
+  &-title {
+    font-size: 16px;
+    font-family: 'Montserra', sans-serif;
+    color: #1C8CFE;
+    letter-spacing: -1px;
+    font-weight: 200;
+    margin-top: 10px;
+
+  }
+
+  &-subtitle {
+    font-size: 16px;
+    color: darken($secondary-color, 45%);
+    margin-top: 12px;
+    line-height: 1.5;
+    font-family: 'Montserra', sans-serif;
+    color: white;
+    letter-spacing: -1px;
+    font-weight: 200;
+  }
+}
+
+@media (min-width: 768px) {
+  .process {
+    display: inline-block;
+
+    &-item {
+      width: 49%;
+      display: inline-block;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .process {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    &-item {
+      width: 100%;
+
+      &:not(:last-of-type) {
+        &::after {
+          content: "";
+          width: 1px;
+          height: 75%;
+          background: darken($secondary-color, 45%);
+          position: absolute;
+          right: 0;
+          top: 50%;
+          opacity: 0.2;
+          transform: translateY(-50%);
+        }
+      }
+    }
+  }
+}
+
+.process-item {
+  background: #1C8CFE;
+}
+
+.title-project {
+  margin-bottom: 24px
+}
+
+.block-process {
+  display: flex;
+}
+
+.description {
+  font-weight: 700;
+  margin-bottom: 36px;
+}
+
+.content-block3 {
+  padding: 10px;
+  height:200px;
+  width: auto;
+  border-radius: 8px;
+  border: 2px solid #171b3d;
+  box-shadow: 7px -7px 66px -18px rgba(33, 40, 96,0.56);
+  -webkit-box-shadow: 7px -7px 66px -18px rgba(33, 40, 96,0.56);
+  -moz-box-shadow: 7px -7px 66px -18px rgba(33, 40, 96,0.56);
+  overflow:auto;
+  margin-top: 24px;
+  margin-bottom: 36px;
+}
+
+.tools {
+  margin-top: 36px;
+}
