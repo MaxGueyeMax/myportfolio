@@ -6,6 +6,10 @@
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
 
+puts 'Destroying seeds...'
+
+Project.destroy_all
+
 puts 'Creating projects...'
 
 winemeup = Project.create!(
@@ -20,7 +24,7 @@ portfolio = Project.create!(
   name: 'My Portfolio',
   description: '',
   details: '',
-  tools: ['Ruby on Rails', 'Mailgun', 'Cloudinary', 'JQuery', 'Javascript Vanilla', 'Stimulus'],
+  tools: ['Ruby on Rails', 'Mailgun', 'Cloudinary', 'JQuery', 'Javascript', 'Vanilla', 'Stimulus'],
   where: 'Nantes'
 )
 
@@ -28,7 +32,10 @@ mycellar = Project.create!(
   name: 'MyCellarApp',
   description: 'One day one of my clients was complaining about its poorly managed wine cellar. So I decided to develop an App to help and assist wine afficionados to manage their wines',
   details: '',
-  tools: ['Ruby on Rails', 'Devise'],
+  tools: [
+    'Ruby on Rails',
+    'Devise'
+  ],
   where: 'Nantes'
 )
 

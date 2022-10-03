@@ -7,7 +7,9 @@
 .process {
   $bem-block: &;
   width: 100%;
-  gap: 16px;
+  gap: 30px;
+  margin-top: 30px;
+  margin-bottom: 30px;
 
   &-item {
     user-select: none;
@@ -15,8 +17,10 @@
     padding: 15px 35px;
     transition: 0.4s ease-in-out;
     background: $background2-color !important;
-    border: 0.5px solid $primary-color;
+    border: 1px solid $primary-color;
     border-radius: 8px;
+    margin-bottom: 30px;
+
 
     &:hover {
       background: $hover-color !important;
@@ -45,7 +49,7 @@
     font-family: 'Montserra', sans-serif;
     color: $primary-color;
     letter-spacing: -1px;
-    font-weight: 200;
+    font-weight: 500;
     margin-top: 10px;
 
   }
@@ -58,8 +62,19 @@
     font-family: 'Montserra', sans-serif;
     color: white;
     letter-spacing: -1px;
-    font-weight: 200;
+    font-weight: 500;
   }
+}
+
+.tools-block {
+  margin-top: 20px;
+}
+
+.tools {
+  font-family: 'Montserra', sans-serif;
+  color: white;
+  letter-spacing: -1px;
+  font-weight: 500;
 }
 
 @media (min-width: 768px) {
@@ -98,4 +113,3 @@
     }
   }
 }
-
