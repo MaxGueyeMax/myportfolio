@@ -48,7 +48,7 @@
 
       &:hover {
         transform: scale(1.04);
-        background: $secondary-color;
+        background: $hover-color ;
       }
     }
   }
@@ -139,7 +139,7 @@
 
         &:hover {
           transform: scale(1.04);
-          background: $secondary-color;
+          background: $hover-color ;
         }
       }
     }

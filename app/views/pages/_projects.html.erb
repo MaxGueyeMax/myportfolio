@@ -1,0 +1,26 @@
+ <ul class="process">
+
+    <% @projects.each do |project| %>
+    <li class="process-item">
+      <div class="title-project">
+        <span class="process-big-title"><%= project.name %></span>
+      </div>
+      <div class="block-process">
+        <div class="description">
+          <span class="process-subtitle"><%= project.description %></span>
+        </div>
+
+        <div class="photo-process">
+          <%# <%= image_tag("winemeup") %>
+        </div>
+
+        <div class="tools-block">
+          <span class="process-title">Tools and Technologies used</span>
+          <div class="tools">
+            <%= project.tools.join(' | ') %>
+          </div>
+        </div>
+      </div>
+    </li>
+  <% end %>
+</ul>

@@ -1,0 +1,115 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.process {
+  $bem-block: &;
+  width: 100%;
+  gap: 30px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+
+  &-item {
+    user-select: none;
+    text-align: center;
+    padding: 15px 35px;
+    transition: 0.4s ease-in-out;
+    background: $background2-color !important;
+    border: 1px solid $primary-color;
+    border-radius: 8px;
+    margin-bottom: 30px;
+
+
+    &:hover {
+      background: $hover-color !important;
+      border-radius: 16px;
+      border: 0.5px solid $hover-color;
+    }
+
+    &:hover #{$bem-block}-big-title {
+      transform: translateY(5px);
+      color: $primary-color;
+    }
+  }
+
+  &-big-title {
+    font-size: 36px;
+    -webkit-text-stroke: 1px $primary-color;
+    display: block;
+    color: transparent;
+    font-family: "Roboto";
+    font-weight: 700;
+    transition: 0.4s ease-in-out;
+  }
+
+  &-title {
+    font-size: 16px;
+    font-family: 'Montserra', sans-serif;
+    color: $primary-color;
+    letter-spacing: -1px;
+    font-weight: 500;
+    margin-top: 10px;
+
+  }
+
+  &-subtitle {
+    font-size: 16px;
+    color: darken($secondary-color, 45%);
+    margin-top: 12px;
+    line-height: 1.5;
+    font-family: 'Montserra', sans-serif;
+    color: white;
+    letter-spacing: -1px;
+    font-weight: 500;
+  }
+}
+
+.tools-block {
+  margin-top: 20px;
+}
+
+.tools {
+  font-family: 'Montserra', sans-serif;
+  color: white;
+  letter-spacing: -1px;
+  font-weight: 500;
+}
+
+@media (min-width: 768px) {
+  .process {
+    display: inline-block;
+
+    &-item {
+      width: 49%;
+      display: inline-block;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .process {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    &-item {
+      width: 100%;
+
+      &:not(:last-of-type) {
+        &::after {
+          content: "";
+          width: 1px;
+          height: 75%;
+          background: darken($secondary-color, 45%);
+          position: absolute;
+          right: 0;
+          top: 50%;
+          opacity: 0.2;
+          transform: translateY(-50%);
+        }
+      }
+    }
+  }
+}

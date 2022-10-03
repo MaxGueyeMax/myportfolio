@@ -108,32 +108,6 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-
-    .experience {
-      background: purple;
-      width: 35%;
-      height: 60vh;
-      margin: 20px 0px 20px 0px;
-    }
-  }
-}
-
-/*Pour tous les appareils équipés d'écrans et dont la taille est inférieure à 780px*/
-@media screen and (max-width: 780px){
-  #projects {
-    height: auto;
-    width: 100%;
-
-    .section-three {
-      display: flex;
-
-      .experience {
-        background: purple;
-        width: 80%;
-        height: 60vh;
-        margin: 20px 0px 20px 0px;
-      }
-    }
   }
 }
 
