@@ -1,4 +1,3 @@
-// Process 2: Projects
 *,
 *::before,
 *::after {
@@ -7,32 +6,33 @@
 
 .process {
   $bem-block: &;
-
   width: 100%;
-  padding: 0 15px;
-  text-align: center;
+  gap: 16px;
 
   &-item {
     user-select: none;
     text-align: center;
-    position: relative;
     padding: 15px 35px;
     transition: 0.4s ease-in-out;
+    background: $background2-color !important;
+    border: 0.5px solid $primary-color;
+    border-radius: 8px;
 
     &:hover {
-      background: darken($secondary-color, 5%);
+      background: $hover-color !important;
       border-radius: 16px;
+      border: 0.5px solid $hover-color;
     }
 
     &:hover #{$bem-block}-big-title {
       transform: translateY(5px);
-      color: #1C8CFE;
+      color: $primary-color;
     }
   }
 
   &-big-title {
     font-size: 36px;
-    -webkit-text-stroke: 1px #1C8CFE;
+    -webkit-text-stroke: 1px $primary-color;
     display: block;
     color: transparent;
     font-family: "Roboto";
@@ -43,7 +43,7 @@
   &-title {
     font-size: 16px;
     font-family: 'Montserra', sans-serif;
-    color: #1C8CFE;
+    color: $primary-color;
     letter-spacing: -1px;
     font-weight: 200;
     margin-top: 10px;
@@ -99,37 +99,3 @@
   }
 }
 
-.process-item {
-  background: #1C8CFE;
-}
-
-.title-project {
-  margin-bottom: 24px
-}
-
-.block-process {
-  display: flex;
-}
-
-.description {
-  font-weight: 700;
-  margin-bottom: 36px;
-}
-
-.content-block3 {
-  padding: 10px;
-  height:200px;
-  width: auto;
-  border-radius: 8px;
-  border: 2px solid #171b3d;
-  box-shadow: 7px -7px 66px -18px rgba(33, 40, 96,0.56);
-  -webkit-box-shadow: 7px -7px 66px -18px rgba(33, 40, 96,0.56);
-  -moz-box-shadow: 7px -7px 66px -18px rgba(33, 40, 96,0.56);
-  overflow:auto;
-  margin-top: 24px;
-  margin-bottom: 36px;
-}
-
-.tools {
-  margin-top: 36px;
-}
