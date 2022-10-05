@@ -11,11 +11,18 @@
 
     .leftbox {
       width: 50%;
+      margin-top: 210px;
     }
 
     .rightbox {
       width: 50%;
-      background: blue;
+      display: flex;
+      justify-content: center;
+      align-content: center;
+
+      img {
+        width: 130%;
+      }
     }
   }
 }
@@ -23,7 +30,7 @@
 /*Pour tous les appareils équipés d'écrans et dont la taille est inférieure à 780px*/
 @media screen and (max-width: 780px){
   #overview {
-    height: 100vh;
+    height: 130vh;
     width: 100%;
     display: flex;
     align-items: center;
@@ -35,6 +42,7 @@
 
       .leftbox {
         width: 100%;
+        margin-top: -180px;
 
         .title1 {
           font-size: 90px;
@@ -43,7 +51,7 @@
 
       .rightbox {
         width: 100%;
-        background: blue;
+        margin-top: -160px;
       }
     }
   }
