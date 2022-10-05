@@ -10,15 +10,15 @@
           <span class="process-subtitle"><%= project.description %></span>
         </div>
 
-        <div class="photo-process">
-          <%# <%= image_tag("winemeup") %>
-        </div>
-
         <div class="tools-block">
           <span class="process-title">Tools and Technologies used</span>
           <div class="tools">
             <%= project.tools.join(' | ') %>
           </div>
+        </div>
+
+        <div class="photo-process">
+          <%= image_tag('project_two.png') %>
         </div>
       </div>
     </li>
