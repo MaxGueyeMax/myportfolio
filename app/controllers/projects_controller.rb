@@ -8,6 +8,6 @@ class ProjectsController < ApplicationController
   end
 
   def article_params
-    params.require(:project).permit(:name, :description, :details, :tools, :where, photos: [])
+    params.require(:project).permit(:name, :description, :details, :tools, :where, :photo)
   end
 end

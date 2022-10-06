@@ -5,6 +5,7 @@
 #
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
+require "open-uri"
 
 puts 'Destroying seeds...'
 
@@ -20,6 +21,10 @@ winemeup = Project.create!(
   where: 'Nantes'
 )
 
+file = URI.open("https://res.cloudinary.com/dvl66pleu/image/upload/v1665048975/project_two_lymtyc.png")
+winemeup.photo.attach(io: file, filename: "project_two", content_type: "image/png")
+winemeup.save
+
 portfolio = Project.create!(
   name: 'My Portfolio',
   description: '',
@@ -27,6 +32,10 @@ portfolio = Project.create!(
   tools: ['Ruby on Rails', 'Mailgun', 'Cloudinary', 'JQuery', 'Javascript', 'Vanilla', 'Stimulus'],
   where: 'Nantes'
 )
+
+file = URI.open("https://res.cloudinary.com/dvl66pleu/image/upload/v1665048984/project_three_s3ltin.png")
+portfolio.photo.attach(io: file, filename: "project_three", content_type: "image/png")
+portfolio.save
 
 mycellar = Project.create!(
   name: 'MyCellarApp',
@@ -38,5 +47,9 @@ mycellar = Project.create!(
   ],
   where: 'Nantes'
 )
+
+file = URI.open("https://res.cloudinary.com/dvl66pleu/image/upload/v1665048984/project_three_s3ltin.png")
+mycellar.photo.attach(io: file, filename: "project_three", content_type: "image/png")
+mycellar.save
 
 puts 'Your projects are now loaded...'

@@ -20,7 +20,9 @@
     border: 1px solid $primary-color;
     border-radius: 8px;
     margin-bottom: 30px;
-
+    position: relative;
+    overflow: hidden;
+    height: 70vh;
 
     &:hover {
       background: $hover-color !important;
@@ -49,7 +51,7 @@
     font-family: 'Montserra', sans-serif;
     color: $primary-color;
     letter-spacing: -1px;
-    font-weight: 500;
+    font-weight: 700;
     margin-top: 10px;
 
   }
@@ -70,14 +72,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: -80px;
 
   img {
-    margin-top: 0px;
-    margin-bottom: 0px;
-    width: 200%;
-    height: auto;
-    margin-top: -130px;
-    margin-bottom: -70px
+    &:hover {
+      transition: all 1s ease-in-out;
+      transform: translateY(-40%);
+    }
   }
 }
 
