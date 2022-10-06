@@ -39,6 +39,12 @@ gem "jbuilder"
 # Mailgun
 gem 'mail_form'
 
+# Env
+gem "dotenv-rails", groups: [:development, :test]
+
+# Cloudinary
+gem "cloudinary"
+
 # Fontawesome
 gem 'font-awesome-sass'
 

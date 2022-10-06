@@ -6,4 +6,8 @@ class ProjectsController < ApplicationController
   def index
     @projects = Project.all
   end
+
+  def article_params
+    params.require(:project).permit(:name, :description, :details, :tools, :where, photos: [])
+  end
 end
