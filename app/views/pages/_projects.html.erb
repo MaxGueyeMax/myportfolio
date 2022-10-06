@@ -4,21 +4,18 @@
     <li class="process-item">
       <div class="title-project">
         <span class="process-big-title"><%= project.name %></span>
+        <span class="process-subtitle"><%= project.description %></span>
       </div>
       <div class="block-process">
-        <div class="description">
-          <span class="process-subtitle"><%= project.description %></span>
-        </div>
-
-        <div class="tools-block">
-          <span class="process-title">Tools and Technologies used</span>
-          <div class="tools">
-            <%= project.tools.join(' | ') %>
+          <div class="tools-block">
+            <span class="process-title">Tools and Technologies used</span>
+            <div class="tools">
+              <%= project.tools.join(' | ') %>
+            </div>
           </div>
-        </div>
 
         <div class="photo-process">
-          <%= image_tag('project_two.png') %>
+          <%= cl_image_tag(project.photo.key, width: 450) %>
         </div>
       </div>
     </li>
