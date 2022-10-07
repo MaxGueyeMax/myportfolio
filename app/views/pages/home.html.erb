@@ -9,18 +9,18 @@
     </li>
 
     <li>
+      <a href="#projects" class="dot" data-scroll="projects">
+      <span>Projects</span>
+      </a>
+    </li>
+
+    <li>
       <a href="#background" class="dot" data-scroll="background">
       <span>Background</span>
       </a>
     </li>
 
     <li>
-      <a href="#projects" class="dot" data-scroll="projects">
-      <span>Projects</span>
-      </a>
-    </li>
-
-        <li>
       <a href="#contact" class="dot" data-scroll="contact">
       <span>Contact me</span>
       </a>
@@ -60,20 +60,19 @@
   </div>
 </section>
 
-<section class="sec" id="background">
-  <div class="container section-two">
-    <div class="leftbox">
-      <%= render 'background_dates' %>
-    </div>
-    <div class="rightbox">
-      <%= render 'background_exp' %>
-    </div>
+<section class="sec" id="projects">
+  <div class="container section-three">
+    <h1 class="title3">My digital projects</h1>
+    <%= render 'projects' %>
   </div>
 </section>
 
-<section class="sec" id="projects">
-  <div class="container section-three">
-    <%= render 'projects' %>
+<section class="sec" id="background">
+  <div class="container section-two">
+    <h1 class="title3">My story</h1>
+    <div class="block-background">
+      <%= render 'background' %>
+    </div>
   </div>
 </section>
 
