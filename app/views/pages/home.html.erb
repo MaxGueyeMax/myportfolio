@@ -9,18 +9,18 @@
     </li>
 
     <li>
+      <a href="#projects" class="dot" data-scroll="projects">
+      <span>Projects</span>
+      </a>
+    </li>
+
+    <li>
       <a href="#background" class="dot" data-scroll="background">
       <span>Background</span>
       </a>
     </li>
 
     <li>
-      <a href="#projects" class="dot" data-scroll="projects">
-      <span>Projects</span>
-      </a>
-    </li>
-
-        <li>
       <a href="#contact" class="dot" data-scroll="contact">
       <span>Contact me</span>
       </a>
@@ -28,69 +28,89 @@
   </ul>
 </nav>
 
-<section class="sec" id="overview">
-  <div class="container section-one">
-    <div class="leftbox">
-      <h1 class="title1">maxime</h1>
-      <h2 class="title2">Junior fullstack web developer</h2>
-      <br>
-      <br>
-      <div class="text1">
-        <p>
-        🕹️ Currently Teacher Assistant <a target="_blank" href="https://www.lewagon.com/web-development-course">@Le Wagon</a>
-        : a 9-week full-time intensive coding bootcamp
-        </p>
+<%# POPUP FOR BACKGROUND  %>
+<div id="popup">
+  <div class="text">
+    <p>kasjdfhdlsqkhfalkdhfqahklfdqahklfdsqlkhfqdslkhfdqlkhfqsdlkhfdsqlkhfdqslkhfdsqkhf</p>
+  </div>
+  <div class="button">
+    <a href="#background" onclick="toggle()">Close</a>
+  </div>
+</div>
 
-        <p>
-        🎯 My objective is to develop my proficiencies towards the React framework and building up my Ruby on Rails among a team of devoted tech afficionados
-        </p>
+<div id="popup2">
+  <div class="text">
+    <p>MOUAHAHAHAHAAHAHAH</p>
+  </div>
+  <div class="button">
+    <a href="#background" onclick="toggle()">Close</a>
+  </div>
+</div>
 
-        <%# JAVASCRIPT %>
-        <%# EXAMPLE2 of TYPE.JS -> For function check Javacript/custom/type.js %>
-        <div class="text-typed">
-          <p class="typed">🙋🏽‍♂️ <span id="typed"></span> <br> In 2022, I decided to move forward and quit my job as a Senior Sales Manager in Singapore to become a Web Developer. To know more, I invite you to check my project and background out</p>
+<div id="blur">
+  <section class="sec" id="overview">
+    <div class="container section-one">
+      <div class="leftbox">
+        <h1 class="title1">maxime</h1>
+        <h2 class="title2">Junior fullstack web developer</h2>
+        <br>
+        <br>
+        <div class="text1">
+          <p>
+          🕹️ Currently Teacher Assistant <a target="_blank" href="https://www.lewagon.com/web-development-course">@Le Wagon</a>
+          : a 9-week full-time intensive coding bootcamp
+          </p>
+
+          <p>
+          🎯 My objective is to develop my proficiencies towards the React framework and building up my Ruby on Rails among a team of devoted tech afficionados
+          </p>
+
+          <%# JAVASCRIPT %>
+          <%# EXAMPLE2 of TYPE.JS -> For function check Javacript/custom/type.js %>
+          <div class="text-typed">
+            <p class="typed">🙋🏽‍♂️ <span id="typed"></span> <br> In 2022, I decided to move forward and quit my job as a Senior Sales Manager in Singapore to become a Web Developer. To know more, I invite you to check my project and background out</p>
+          </div>
+
         </div>
+      </div>
 
+      <div class="rightbox">
+      <%= image_tag('photo_website.png') %>
       </div>
     </div>
+  </section>
 
-    <div class="rightbox">
-    <%= image_tag('photo_website.png') %>
+  <section class="sec" id="projects">
+    <div class="container section-three">
+      <h1 class="title3">My digital projects</h1>
+      <%= render 'projects' %>
     </div>
-  </div>
-</section>
+  </section>
 
-<section class="sec" id="background">
-  <div class="container section-two">
-    <div class="leftbox">
-      <%= render 'background_dates' %>
-    </div>
-    <div class="rightbox">
-      <%= render 'background_exp' %>
-    </div>
-  </div>
-</section>
-
-<section class="sec" id="projects">
-  <div class="container section-three">
-    <%= render 'projects' %>
-  </div>
-</section>
-
-<section class="sec" id="contact">
-  <div class="container section-four">
-    <div class="leftbox">
-      <div class="media">
-        <a href="https://www.linkedin.com/in/gueyemaxime/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
-        <a href="https://github.com/MaxGueyeMax" target="_blank"><i class="fa-brands fa-github"></i></a>
-        <a href="mailto:gueye.maxime@outlook.com?subject=Hello%20from%20Max%20portfolio%20" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+  <section class="sec" id="background">
+    <div class="container section-two">
+      <h1 class="title3">My story</h1>
+      <div class="block-background">
+        <%= render 'background' %>
       </div>
     </div>
+  </section>
 
-    <div class="break"></div>
+  <section class="sec" id="contact">
+    <div class="container section-four">
+      <div class="leftbox">
+        <div class="media">
+          <a href="https://www.linkedin.com/in/gueyemaxime/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://github.com/MaxGueyeMax" target="_blank"><i class="fa-brands fa-github"></i></a>
+          <a href="mailto:gueye.maxime@outlook.com?subject=Hello%20from%20Max%20portfolio%20" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+      </div>
 
-    <div class="rightbox">
-      <%= render 'contact_form' %>
+      <div class="break"></div>
+
+      <div class="rightbox">
+        <%= render 'contact_form' %>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
+</div>

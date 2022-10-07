@@ -57,8 +57,21 @@
   }
 }
 
-
 /* Section 2 */
+
+#projects {
+  height: auto;
+  width: 100%;
+
+  .section-three {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 80px;
+    padding-bottom: 30px;
+  }
+}
+
+/* Section 3 */
 
 #background {
   height: auto;
@@ -66,17 +79,12 @@
 
   .section-two {
     display: flex;
+    flex-direction: column;
+    padding-top: 80px;
+    padding-bottom: 30px;
 
-    .leftbox {
-      background: yellow;
-      height: 60vh;
-      flex-grow: 1;
-    }
-
-    .rightbox {
-      background: green;
-      height: 60vh;
-      flex-grow: 3;
+    .block-background {
+      display: flex;
     }
   }
 }
@@ -106,18 +114,6 @@
 }
 
 
-/* Section 3 */
-
-#projects {
-  height: auto;
-  width: 100%;
-
-  .section-three {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-  }
-}
 
 /* Section 4 */
 
