@@ -1,7 +1,9 @@
- <ul class="process">
 
-    <li class="process-item-background">
-      <div class="title-project open-button" onclick="openbox()">
+ <ul class="process content">
+
+
+    <li class="process-item-background" onclick="toggle()">
+      <div class="title-project">
         <div class="title-project">
           <span class="process-big-title-background">As a constant learner</span>
           <span class="process-subtitle-background">📍 Brighton, UK | Raleigh, US | Paris, FR | Oslo, NW</span>
@@ -18,12 +20,7 @@
       </div>
     </li>
 
-    <div class="popup">
-      <p>kasjdfhdlsqkhfalkdhfqahklfdqahklfdsqlkhfqdslkhfdqlkhfqsdlkhfdsqlkhfdqslkhfdsqkhf</p>
-      <button type="button" class="close-button" onclick="closebox()">Close</button>
-    </div>
-
-    <li class="process-item-background">
+    <li class="process-item-background" onclick="toggle2()">
       <div class="title-project-background">
         <div class="title-project-background">
           <span class="process-big-title-background">As a working professional</span>
@@ -44,3 +41,21 @@
     </li>
 
 </ul>
+
+<script type="text/javascript">
+  function toggle(){
+    var popup = document.getElementById('popup');
+    popup.classList.toggle('active');
+
+    var blur = document.getElementById('blur');
+    blur.classList.toggle('active');
+  }
+
+    function toggle2(){
+    var popup = document.getElementById('popup2');
+    popup.classList.toggle('active');
+
+    var blur = document.getElementById('blur');
+    blur.classList.toggle('active');
+  }
+</script>
