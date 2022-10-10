@@ -191,6 +191,20 @@
     display: flex;
     justify-content: center;
     width: 100%;
+
+    a {
+      background: $background2-color;
+      color: $primary-color;
+      border-radius: 16px;
+      border: 1px solid $primary-color;
+      padding: 6px 30px;
+      margin-bottom: 30px;
+
+      &:hover {
+        transform: scale(1.04);
+        background: $hover-color ;
+      }
+    }
   }
 }
 

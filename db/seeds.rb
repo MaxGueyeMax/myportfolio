@@ -15,7 +15,7 @@ puts 'Creating projects...'
 
 winemeup = Project.create!(
   name: 'WineMeUp',
-  description: 'Wagon bootcamp final project: we developped in 10 days a MeetUp based platform with one motto, share pleasant moments around wine',
+  description: 'Wagon bootcamp final project: In a 10 days sprint, we developed MeetUp based platform with one motto, share pleasant moments around wine',
   details: '',
   tools: ['Ruby on Rails', 'Mapbox', 'Devise', 'Cloudinary', 'Websocket & Action', 'Stimulus'],
   where: 'Nantes'
@@ -27,7 +27,7 @@ winemeup.save
 
 portfolio = Project.create!(
   name: 'My Portfolio',
-  description: '',
+  description: 'Before kicking off my research for a job as a Fullstack Developer I decided to work on this portfolio to better explain my approach to this move/career change',
   details: '',
   tools: ['Ruby on Rails', 'Mailgun', 'Cloudinary', 'JQuery', 'Javascript', 'Vanilla', 'Stimulus'],
   where: 'Nantes'
@@ -39,7 +39,7 @@ portfolio.save
 
 mycellar = Project.create!(
   name: 'MyCellarApp',
-  description: 'One day one of my clients was complaining about its poorly managed wine cellar. So I decided to develop an App to help and assist wine afficionados to manage their wines',
+  description: '*current project - in progress* One day one of my clients was complaining about its poorly managed wine cellar. So I decided to develop an App to help and assist wine aficionados to manage their wines',
   details: '',
   tools: [
     'Ruby on Rails',
